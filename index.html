@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GuitarChords | 吉他和弦图谱</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>GuitarChords</h1>
+      <p>快速查看常见吉他和弦</p>
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="搜索和弦" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="pinned-section" id="pinnedSection" hidden>
+      <div class="pinned-header">
+        <h2>置顶和弦</h2>
+        <button id="clearPinnedBtn" class="clear-pinned-btn">清除所有置顶</button>
+      </div>
+      <section class="chord-grid" id="pinnedGrid"></section>
+    </section>
+
+    <section class="section-intro">
+      <h2>和弦浏览</h2>
+      <p>点击任意和弦卡片以查看指法、音符说明和演奏建议。（建议在页面底部）</p>
+      <p>光标放在卡片上可以显示置顶按钮，点击即可将和弦置顶。</p>
+    </section>
+
+    <section class="chord-grid" id="chordGrid"></section>
+
+    <section class="detail-summary" id="detailSummary" hidden>
+      <div class="detail-card">
+        <h2 id="detailName"></h2>
+        <p id="detailDescription"></p>
+        <div class="diagram-large" id="detailDiagram"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Vibe Coding/By Redersha. Copilot牛逼！</p>
+    <p>本站部署在GitHub Pages上。</p>
+    <a href="https://github.com/Redersha/GuitarChords" target="top">本站在GitHub</a>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
