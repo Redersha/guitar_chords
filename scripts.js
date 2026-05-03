@@ -266,7 +266,7 @@ function renderDiagram(shape, fingers) {
     if (value !== 0 && value !== "x") {
       const dot = document.createElement("div");
       dot.className = "dot";
-      const rowPosition = (value - 1) * 20 + 5;
+      const rowPosition = (value - 1) * 20 + 10;
       dot.style.top = `${rowPosition}%`;
       dot.textContent = fingers[index] || "";
       stringColumn.appendChild(dot);
